@@ -13,7 +13,7 @@ function App() {
       value={{ registeredCourses, setRegisteredCourses }}
     >
       <NavBar />
-      <div className="container">
+      <div className="container mt-3">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
