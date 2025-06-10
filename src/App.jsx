@@ -13,13 +13,13 @@ function App() {
       value={{ registeredCourses, setRegisteredCourses }}
     >
       <NavBar />
-      <div className="container mt-3">
+      <main className="container my-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/news" element={<News />} />
         </Routes>
-      </div>
+      </main>
     </RegistrationContext.Provider>
   );
 }
