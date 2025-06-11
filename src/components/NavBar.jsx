@@ -2,10 +2,7 @@ import { NavLink } from "react-router";
 
 function NavBar() {
   return (
-    <nav
-      data-bs-theme="dark"
-      className="navbar navbar-expand-lg bg-body-tertiary"
-    >
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <NavLink to="/" className="navbar-brand">
           CodeSchool
