@@ -15,7 +15,7 @@ function CourseDetails() {
           <h6 className="card-subtitle mb-2 text-body-secondary">
             {course.duration}
           </h6>
-          <p className="card-text">{course.longDescription}</p>
+          <p className="card-text mb-4">{course.longDescription}</p>
           <a href="/courses" className="btn btn-outline-primary">
             Back to Courses
           </a>
