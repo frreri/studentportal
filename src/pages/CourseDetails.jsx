@@ -16,14 +16,14 @@ function CourseDetails() {
             {course.duration}
           </h6>
           <p className="card-text">{course.longDescription}</p>
+          <a href="/courses" className="btn btn-outline-primary">
+            Back to Courses
+          </a>
           <a
             href={`/register/${course.courseId}`}
             className="btn btn-primary mx-2"
           >
             Registration
-          </a>
-          <a href="/courses" className="btn btn-outline-primary">
-            Back to Courses
           </a>
         </div>
       </article>
