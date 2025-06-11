@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import News from "./pages/News";
 import NavBar from "./components/NavBar";
+import CourseDetails from "./pages/CourseDetails";
+import Register from "./pages/Register";
 
 function App() {
   const [registeredCourses, setRegisteredCourses] = useState([]);
@@ -16,8 +18,11 @@ function App() {
       <main className="container my-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/courses" element={<Courses />} />
           <Route path="/news" element={<News />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:courseId" element={<CourseDetails />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/register/:courseId" element={<Register />} />
         </Routes>
       </main>
     </RegistrationContext.Provider>

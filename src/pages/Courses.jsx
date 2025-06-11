@@ -4,7 +4,7 @@ import { courses } from "../data/courses";
 function Courses() {
   return (
     <>
-      <h1>Our Courses</h1>
+      <h1 className="my-4">Our Courses</h1>
       <div className="container">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-4 align-items-stretch">
           {courses.map((course) => {

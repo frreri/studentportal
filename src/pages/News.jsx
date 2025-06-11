@@ -4,7 +4,7 @@ import { news } from "../data/news";
 function News() {
   return (
     <>
-      <h1>Development News</h1>
+      <h1 className="my-4">Development News</h1>
       <div className="container">
         <div className="row gy-4">
           {news.map((article) => (
