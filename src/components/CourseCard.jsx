@@ -10,7 +10,13 @@ function CourseCard({ course }) {
   return (
     <div className="card shadow-sm h-100">
       <div className={`card-header ${alreadyRegistered ? "bg-success" : ""}`}>
-        {alreadyRegistered ? "Registered" : course.level}
+        {alreadyRegistered ? (
+          <>
+            <i className="fa-solid fa-circle-check me-2"></i>Registered
+          </>
+        ) : (
+          course.level
+        )}
       </div>
       <div className="card-body d-flex flex-column">
         <h5 className="card-title">{course.courseName}</h5>
@@ -19,7 +25,7 @@ function CourseCard({ course }) {
           to={`/courses/${course.courseId}`}
           className="btn btn-primary mt-auto"
         >
-          Read More
+          <i className="fa-solid fa-book me-2"></i>Read More
         </Link>
       </div>
     </div>

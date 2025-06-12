@@ -39,8 +39,15 @@ function Home() {
             </ul>
           </div>
         </div>
+        {registeredCourses.length > 0 && (
+          <p className="mt-4">
+            If you want to remove a course, go to{" "}
+            <Link to="/register">register</Link> and select the course in the
+            dropdown menu.
+          </p>
+        )}
         <Link to="/courses" className="btn btn-primary my-4">
-          To Courses
+          To Courses<i className="fa-solid fa-arrow-right ms-2"></i>
         </Link>
       </div>
     </div>

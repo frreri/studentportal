@@ -103,11 +103,12 @@ function RegistrationForm({ courseId }) {
                 variant="contained"
                 disabled={allreadyRegistered}
               >
+                <i className="fa-solid fa-paper-plane me-2"></i>
                 {allreadyRegistered ? "Allready Registered" : "Register"}
               </Button>
               {allreadyRegistered && (
                 <Button variant="outlined" color="error" onClick={handleRemove}>
-                  Remove Registration
+                  <i className="fa-solid fa-trash me-2"></i>Remove Registration
                 </Button>
               )}
             </div>
