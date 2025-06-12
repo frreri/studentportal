@@ -36,6 +36,7 @@ function RegistrationForm({ courseId }) {
     e.preventDefault();
     const course = courses.find((course) => course.courseId === selected);
     setRegisteredCourses((registered) => [...registered, course]);
+    console.log(`${fullName} (${email}) was registered for:`, course);
     setFullName("");
     setEmail("");
   };
