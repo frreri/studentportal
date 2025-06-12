@@ -1,5 +1,5 @@
 import { courses } from "../data/courses";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 
 function CourseDetails() {
   const { courseId } = useParams();
@@ -16,15 +16,15 @@ function CourseDetails() {
             {course.duration}
           </h6>
           <p className="card-text mb-4">{course.longDescription}</p>
-          <a href="/courses" className="btn btn-outline-primary">
+          <Link to="/courses" className="btn btn-outline-primary">
             Back to Courses
-          </a>
-          <a
-            href={`/register/${course.courseId}`}
+          </Link>
+          <Link
+            to={`/register/${course.courseId}`}
             className="btn btn-primary mx-2"
           >
             Registration
-          </a>
+          </Link>
         </div>
       </article>
     </>
